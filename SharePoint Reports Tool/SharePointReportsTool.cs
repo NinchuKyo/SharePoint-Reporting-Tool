@@ -200,7 +200,7 @@ namespace SharePointReportsTool
                     using (ClientContext clientContext = new ClientContext(txtSPURL.Text))
                     {
 
-                        clientContext.Credentials = new NetworkCredential("DavidNguyen", "Password12#", @"http://50.99.240.145:41139");
+                        clientContext.Credentials = new NetworkCredential();
 
                         List oList = clientContext.Web.Lists.GetByTitle(lblListTitle.Text);
                         String Title = String.Empty;
