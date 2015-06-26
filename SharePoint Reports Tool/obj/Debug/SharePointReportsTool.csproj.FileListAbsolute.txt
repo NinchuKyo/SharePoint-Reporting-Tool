@@ -49,3 +49,13 @@ E:\Files\David Nguyen Documents\Work Projects\Smart Solution\SharePoint Tools an
 E:\Files\David Nguyen Documents\Work Projects\Smart Solution\SharePoint Tools and Applications\Reporting Tools\SharePoint Reports Tool\obj\Debug\SharePointReportsTool.SharePointReportsTool.resources
 E:\Files\David Nguyen Documents\Work Projects\Smart Solution\SharePoint Tools and Applications\Reporting Tools\SharePoint Reports Tool\obj\Debug\SharePointReportsTool.Properties.Resources.resources
 E:\Files\David Nguyen Documents\Work Projects\Smart Solution\SharePoint Tools and Applications\Reporting Tools\SharePoint Reports Tool\obj\Debug\SharePointReportsTool.csproj.GenerateResource.Cache
+C:\Users\DavidNguyen\Source\Repos\SharePoint-Reporting-Tool\SharePoint Reports Tool\bin\Debug\SharePointReportsTool.exe.config
+C:\Users\DavidNguyen\Source\Repos\SharePoint-Reporting-Tool\SharePoint Reports Tool\obj\Debug\SharePointReportsTool.exe
+C:\Users\DavidNguyen\Source\Repos\SharePoint-Reporting-Tool\SharePoint Reports Tool\obj\Debug\SharePointReportsTool.pdb
+C:\Users\DavidNguyen\Source\Repos\SharePoint-Reporting-Tool\SharePoint Reports Tool\bin\Debug\SharePointReportsTool.exe
+C:\Users\DavidNguyen\Source\Repos\SharePoint-Reporting-Tool\SharePoint Reports Tool\bin\Debug\SharePointReportsTool.pdb
+C:\Users\DavidNguyen\Source\Repos\SharePoint-Reporting-Tool\SharePoint Reports Tool\obj\Debug\SharePointReportsTool.csprojResolveAssemblyReference.cache
+C:\Users\DavidNguyen\Source\Repos\SharePoint-Reporting-Tool\SharePoint Reports Tool\obj\Debug\SharePointReportsTool.LoadingSplashScreen.resources
+C:\Users\DavidNguyen\Source\Repos\SharePoint-Reporting-Tool\SharePoint Reports Tool\obj\Debug\SharePointReportsTool.SharePointReportsTool.resources
+C:\Users\DavidNguyen\Source\Repos\SharePoint-Reporting-Tool\SharePoint Reports Tool\obj\Debug\SharePointReportsTool.Properties.Resources.resources
+C:\Users\DavidNguyen\Source\Repos\SharePoint-Reporting-Tool\SharePoint Reports Tool\obj\Debug\SharePointReportsTool.csproj.GenerateResource.Cache

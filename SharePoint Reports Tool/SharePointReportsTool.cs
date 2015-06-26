@@ -19,7 +19,7 @@ namespace SharePointReportsTool
 {
     public partial class SharePointReportsTool : System.Windows.Forms.Form
     {
-        //use
+        // use
         private String originalQuery;
 
         public SharePointReportsTool()
@@ -27,9 +27,7 @@ namespace SharePointReportsTool
             InitializeComponent();
         }
 
-        //////////////////////////////
-        //BUTTON METHODS START HERE//
-        ////////////////////////////
+        /* Button Methods */
 
         /// <summary>
         /// "List / Library" button
@@ -441,14 +439,8 @@ namespace SharePointReportsTool
 
         }
 
-        //////////////////////////////
-        //BUTTON METHODS END HERE////
-        ////////////////////////////
-
-        ////////////////////////////
-        //SUPPORTING METHODS START//
-        ////////////////////////////
-
+        /* Supporter Methods */
+        
         /// <summary>
         /// Occurs when you click a file in the treeList window
         /// </summary>
@@ -529,9 +521,7 @@ namespace SharePointReportsTool
         }//end treeLists_AfterSelect
 
 
-        //////////////////////////////
-        //Simple supporting methods//
-        ////////////////////////////
+        /* Simple Supporting Methods */
 
         /// <summary>
         /// Free object
@@ -600,10 +590,6 @@ namespace SharePointReportsTool
             return result;
         }
 
-        ////////////////////////////
-        //SUPPORTING METHODS END////
-        ////////////////////////////
     }
-
 
 }

@@ -12,11 +12,11 @@ namespace SharePointReportsTool
 {
     public partial class LoadingSplashScreen : Form
     {
-        //need delegate for cross-thread calling
+        // need delegate for cross-thread calling
         private delegate void StopRunning();
         private delegate void UpdateProgress();
 
-        //static background and loadingbar variables
+        // static background and loadingbar variables
         private static LoadingSplashScreen loading;
         private static BackgroundWorker work;
         private static int currentProgress;
@@ -33,16 +33,16 @@ namespace SharePointReportsTool
         /// </summary>
         public static void startSplashScreen(String name)
         {
-            //use background worker as seperate thread for progress bar
+            // use background worker as seperate thread for progress bar
             work = new BackgroundWorker();
 
-            //set display name for splash screen
+            // set display name for splash screen
             displayName = name;
 
-            //sets a handler for where the backgroundworker starts when thread begins
+            // sets a handler for where the backgroundworker starts when thread begins
             work.DoWork += new System.ComponentModel.DoWorkEventHandler(LoadingSplashScreen.showSplashScreen);
 
-            //start thread
+            // start thread
             work.RunWorkerAsync();
         }
 
@@ -53,7 +53,7 @@ namespace SharePointReportsTool
         /// <param name="e">Event activated by DoWorkEvent Handler</param>
         private static void showSplashScreen(object sender, DoWorkEventArgs e)
         {
-            //start showing the loading bar when thread starts
+            // start showing the loading bar when thread starts
             loading = new LoadingSplashScreen();
 
             loading.Text = displayName;
@@ -72,48 +72,46 @@ namespace SharePointReportsTool
         public static void stopSplashScreen()
         {
 
-            //in case if there was not enough time to instantiate loading
+            // in case if there was not enough time to instantiate loading
             while (loading == null)
             {
                 Thread.Sleep(5);
             }
 
-            //in case if loading bar cancelled during loading
+            // in case if loading bar cancelled during loading
             if (loading.IsHandleCreated)
             {
                 //invoke loading bar thread and end
                 loading.Invoke(new StopRunning(LoadingSplashScreen.closeSplashScreen));
             }
 
-            //reset loading to null to handle new cases
+            // reset loading to null to handle new cases
             loading = null;
         }
 
         private static void closeSplashScreen()
         {
-            //end splash screen
+            // end splash screen
             loading.Close();
         }
 
-        //////////////////////////////
-        //Block Loading Bar Features//
-        //////////////////////////////
+        /* Block Loading Bar Features */
 
         /// <summary>
         /// Initialize the loading bar (block) by creating a backgroundWorker thread
         /// </summary>
         public static void startBlockLoadingBar(String name)
         {
-            //use bgWorker as seperate thread for progress bar
+            // use bgWorker as seperate thread for progress bar
             work = new BackgroundWorker();
 
-            //set display name for splash screen
+            // set display name for splash screen
             displayName = name;
 
-            //sets a handler for where the backgroundworker starts when thread starts
+            // sets a handler for where the backgroundworker starts when thread starts
             work.DoWork += new System.ComponentModel.DoWorkEventHandler(LoadingSplashScreen.showBlockLoadingBar);
 
-            //start thread
+            // start thread
             work.RunWorkerAsync();
         }
 
